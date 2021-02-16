@@ -4,5 +4,8 @@
     "python.experiments.optOutFrom": ["All"],
     "editor.fontFamily": "'JetBrains Mono', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "editor.fontSize": 16,
-    "terminal.integrated.fontSize": 16,    
+    "terminal.integrated.fontSize": 16,   
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": ["-l 120"]
+
 }
