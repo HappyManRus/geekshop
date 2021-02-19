@@ -15,7 +15,6 @@ def main(request):
     content = {"title": title, "products": products, "media_url": settings.MEDIA_URL}
     return render(request, "mainapp/index.html", content)
 
-
 def products(request, pk=None):
     title = "продукты"
     links_menu = ProductCategory.objects.all()
