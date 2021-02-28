@@ -17,7 +17,7 @@ def mail_to(input_str):
 
 
 @register.filter(name="tel")
-def mail_to(input_str):
+def tel(input_str):
     """
     Create link `tel:`
     """
