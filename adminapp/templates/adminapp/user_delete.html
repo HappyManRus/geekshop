@@ -14,6 +14,8 @@
         {% csrf_token %}
         <input class="btn btn-danger" type="submit" value="удалить">
     </form>
-    <a href="{% url 'admin:users' %}" class="btn btn-success btn-block" role="button">отмена</a>
+    <button class="btn btn-success">
+        <a href="{% url 'admin:users' %}">отмена</a>
+    </button>
 </div>
 {% endblock content %}
