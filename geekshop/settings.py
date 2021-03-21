@@ -46,10 +46,12 @@ INSTALLED_APPS = [
 ]
 
 if DEBUG:
-    INSTALLED_APPS.extend([
-        "debug_toolbar",
-        "template_profiler_panel",
-    ])
+    INSTALLED_APPS.extend(
+        [
+            "debug_toolbar",
+            "template_profiler_panel",
+        ]
+    )
 
 # Auth model
 AUTH_USER_MODEL = "authnapp.ShopUser"
@@ -66,9 +68,11 @@ MIDDLEWARE = [
 ]
 
 if DEBUG:
-    MIDDLEWARE.extend([
-        "debug_toolbar.middleware.DebugToolbarMiddleware",
-    ])
+    MIDDLEWARE.extend(
+        [
+            "debug_toolbar.middleware.DebugToolbarMiddleware",
+        ]
+    )
 
 ROOT_URLCONF = "geekshop.urls"
 
